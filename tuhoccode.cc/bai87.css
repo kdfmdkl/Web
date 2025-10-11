@@ -1,0 +1,49 @@
+.header {
+  text-align: center;
+  background-color: yellow;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  width: 400px;
+  margin: 40px;
+  background-color: cyan;
+  position: relative;
+}
+.box1 {
+  background-color: red;
+}
+.box2 {
+  background-color: blue;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.box3 {
+  background-color: green;
+}
+h1 {
+  font-size: 20px;
+}
+/* position: absolute kết hợp với relative 
+để di chuyển phần tử theo cha của nó là relative cứ 
+relative gần nó nhất thì absolute thì nó sẽ
+ ăn theo cha nó gần nhât */
+.nuti {
+  color: pink;
+  margin: 2rem;
+  font-size: 2rem;
+  position: relative;
+}
+.mes {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+  position: absolute;
+  top: -10px;
+  left: 15px;
+}

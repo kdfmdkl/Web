@@ -1,0 +1,64 @@
+* {
+  font-size: 1rem;
+}
+.container {
+  display: flex;
+  background-color: blue;
+  height: 400px;
+  border: 1px solid black;
+
+  /* justify-content: start; */
+  /* justify-content: end; */
+  /* justify-content: center; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  justify-content: space-evenly;
+  /* align-items: stretch;default */
+  /* align-items: flex-start; */
+  /* align-items: end; */
+  align-items: center;
+  /* align-items: baseline; */
+  /* flex-wrap: nowrap; */ /* default */
+  flex-wrap: wrap;
+  /* cho phép xuống dòng dựa trên
+   chiều rộng đặt là bao nhiêu */
+  /* flex-wrap: wrap-reverse; */
+  /* xuong dong nguoc lai dựa trên chiều
+   rộng đặt là bao nhiêu */
+  /* align-content: stretch; default */
+  /* align-content: flex-start; */ /* theo trục dọc của trục cros axit nhưng mà hướng lên trên đầu của trục*/
+  /* align-content: flex-end; */ /* theo trục dọc của trục cros axit  nhưng mà hướng xuống cuối cùng của trục*/
+  /* align-content: center; theo trục dọc của trục cros axit nhưng mà hướng về giữa của trục*/
+  /* align-content: space-between; */
+  /* align-content: space-around; */
+  /* align-content: space-evenly; */
+  /* flex-direction: row; default */
+  /* flex-direction: row-reverse; ngược lại với row */
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; từ dưới lên trên */
+  flex-flow: wrap column;
+}
+.box {
+  background-color: cyan;
+  padding: 10px;
+  width: 30%;
+  flex: 1 0 30%;
+}
+.box1 {
+  /* theo chiều dọc */
+  align-self: center; /* default */
+  /* align-self: flex-start; */
+  /* align-self: flex-end; */
+  /* align-self: center; */
+  /* align-self: baseline; */
+  /* align-self: stretch; */
+  /* flex-grow: 1; /* default 0 */
+  /* flex-shrink: 0; */
+  /* flex-basis: 30%; default auto */
+  order: 1;
+}
+.box2,
+.box3 {
+  /* flex-grow: 1; */
+  border: 1px solid red;
+}

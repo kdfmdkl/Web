@@ -1,0 +1,134 @@
+body {
+  background-color: beige;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+.header {
+  background-color: #333;
+  padding: 10px 0;
+  height: 60px;
+}
+.header-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: auto;
+}
+.nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav_a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.nav_a:hover {
+  background-color: rgba(225, 156, 77, 0.832);
+  color: #333;
+}
+.nav_a:active {
+  background-color: #555;
+  color: white;
+}
+.nav_a:visited {
+  color: white;
+}
+.nav_a:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+.nav_a:disabled {
+  color: #777;
+  pointer-events: none;
+  cursor: default;
+}
+.nav_a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s;
+}
+.nav_a:hover::after {
+  width: 100%;
+}
+.nav_a:focus::after {
+  width: 100%;
+}
+.nav_a:active::after {
+  width: 100%;
+}
+h1 {
+  color: #333;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 16px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  margin-top: 175px;
+}
+.main-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.img-main {
+  position: relative;
+  width: 80px; /* hoặc tùy ý */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.img-main img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.img-main img:nth-child(2) {
+  left: 8px; /* dịch ảnh thứ 2 sang phải một chút */
+  z-index: 1;
+}
+
+.img-main img:nth-child(3) {
+  left: 20px; /* dịch ảnh thứ 3 sang phải nhiều hơn */
+  z-index: 2;
+}
+span {
+  color: gray;
+  font-weight: bold;
+}
+.p-main-left {
+  width: 60%;
+  line-height: 1.6;
+  color: #555;
+  margin-top: 110px;
+}
