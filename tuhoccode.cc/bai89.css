@@ -37,6 +37,7 @@
   /* flex-direction: column; */
   /* flex-direction: column-reverse; từ dưới lên trên */
   flex-flow: wrap column;
+  /* haha */
 }
 .box {
   background-color: cyan;
