@@ -236,3 +236,60 @@ a {
 #hh {
   margin-right: 28px;
 }
+.popular {
+  width: 1170px;
+  height: 645px;
+  padding-top: 65px;
+  margin-top: 135px;
+  margin-left: 265px;
+}
+.popular .main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.h2-eveling {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 3.8rem;
+  line-height: 4.8rem;
+}
+.popular-top .desc {
+  width: 458px;
+  height: 60px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 1.8rem;
+  line-height: 30px;
+  margin-top: 16px;
+  color: #5f5b53;
+}
+.control {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 98px;
+  height: 40px;
+  gap: 18px;
+}
+.popular .control-btn {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  border: 1px solid #ffb900;
+  border-radius: 999px;
+  color: #ffb900;
+}
+.popular .control-btn:hover {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  border: 1px solid #ffb900;
+  border-radius: 999px;
+  color: #ffffff;
+  background-color: #ffb900;
+}
