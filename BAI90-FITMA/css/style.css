@@ -364,9 +364,13 @@ a {
   font-size: 14px;
   line-height: 26px;
   text-align: center;
-  background-color: var(--mauvang);
+  background-color: var(--mauden);
   color: #ffffff;
   border-radius: 25px;
   border: none;
   margin-right: 22px;
+}
+.mony-btn .btn-booknow:hover {
+  color: var(--mauden);
+  background-color: var(--mauvang);
 }
