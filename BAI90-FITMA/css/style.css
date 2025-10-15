@@ -842,6 +842,7 @@ a {
   font-size: 14px;
   line-height: 26px;
   color: var(--mautrang);
+  margin-top: 28px;
 }
 .fotter-item .location .sp-location {
   font-family: var(--font-family);
