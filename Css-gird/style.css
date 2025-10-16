@@ -1,0 +1,31 @@
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box1,
+.box3,
+.box5 {
+  background-color: blue;
+}
+.box2,
+.box4 {
+  background-color: cyan;
+}
+.container {
+  display: grid;
+  /* 3. chia hàng và cột cho css gird */
+  /* lưu ý : css gird chỉ sử dụng class cha */
+  grid-template-columns: 90px 200px 150px;
+  /* chia thành 3 cột có giá trị như trên cũng kiểu như là
+  nó chia thành 3 cột theo chiều ngang do đang để dislpay-flex bên class box */
+  grid-template-rows: 50px 100px;
+  /* grid-template-columns: auto; */
+  /* grid-template-rows: auto; */
+  /* chia thành 2 giá trị hàng ngang và nó chia giá trị theo chiều dọc  */
+  /* 4. Giá trị gap */
+  /* grid-column-gap: 30px; */
+  /* grid-row-gap: 30px; */
+  /* Cách viết gọn gàng */
+  gap: 30px 20px;
+}
