@@ -1,0 +1,16 @@
+body {
+  background-color: purple;
+
+  @media (min-width: 319px) and (max-width: 480px) {
+    background-color: aqua;
+  }
+  @media (min-width: 481px) and (max-width: 1200px) {
+    background-color: yellow;
+  }
+  @media (min-width: 1201px) and (max-width: 1600px) {
+    background-color: chocolate;
+  }
+  @media (min-width: 1601px) {
+    background-color: green;
+  }
+}

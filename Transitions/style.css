@@ -1,0 +1,15 @@
+.btn {
+  background-color: yellow;
+  color: red;
+  border: none;
+  padding: 15px 20px;
+  cursor: pointer;
+  /* transition: 0.5S; */
+  transition-duration: 0.5s;
+  transition-delay: 1s;
+  transition-property: background-color, color;
+}
+.btn:hover {
+  background-color: blue;
+  color: white;
+}

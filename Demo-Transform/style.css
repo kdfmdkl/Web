@@ -1,0 +1,29 @@
+body {
+  background-color: #000;
+}
+.header {
+  color: #fff;
+  padding: 100px;
+  position: relative;
+  font-size: 2rem;
+}
+.header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: #0600ff;
+  background: linear-gradient(92deg, #0600ff 0%, #00f5ff 80%);
+  background: -webkit-linear-gradient(92deg, #0600ff 0%, #00f5ff 80%);
+  background: -moz-linear-gradient(92deg, #0600ff 0%, #00f5ff 80%);
+  transform: rotate(5deg) scale(1.2) skew(8deg) translate(-75px, 36px);
+  -webkit-transform: rotate(5deg) scale(1.2) skew(8deg) translate(-75px, 36px);
+  -moz-transform: rotate(5deg) scale(1.2) skew(8deg) translate(-75px, 36px);
+}
+.header__heading {
+  color: #000;
+}

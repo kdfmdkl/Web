@@ -1,0 +1,25 @@
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid yellow;
+  border-radius: 10px;
+}
+.container {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+
+  /* giá trị auto-fill khi kéo thả 
+  phần phóng to thu nhỏ thì nó sẽ 
+  có phần trắng, khi thu thì phần 
+  trắng đó sẽ thu trước r mới đến 
+  các item sau muốn khắc phục không 
+  còn khoảng trắng thì sử dụng auto-fit
+   thì nó sẽ không còn khoảng trắng mà 
+   nó sẽ thù luôn vào phần item mà phần 
+   item cho nó kích thước nhỏ quá không 
+   vừa với nó thì nó sẽ tự động giãn to 
+   ra để phù hợp với khung chứa nó */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 5px;
+}
