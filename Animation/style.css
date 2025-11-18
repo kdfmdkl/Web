@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vh;
+  height: 100vh;
+}
+.spiner {
+  position: relative;
+  font-size: 1.5em;
+}
+.spiner::after {
+  content: "";
+  position: absolute;
+  border: 20px solid blue;
+  border-top: 20px solid yellow;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: spinner 2s infinite linear;
+}
+/* Sửa lại phần keyframes như sau */
+@keyframes spinner {
+  0% {
+    /* Giữ nguyên vị trí ở giữa và bắt đầu xoay từ 0 độ */
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    /* Giữ nguyên vị trí ở giữa và xoay đến 360 độ */
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
