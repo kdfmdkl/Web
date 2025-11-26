@@ -151,7 +151,7 @@ a {
   font-size: 1.8rem;
   font-family: var(--font-family);
 }
-/* Main - left */
+/* Main - right */
 .hero .content-block {
   padding: 90px 128px 130px 135px;
   width: 470px;
@@ -890,4 +890,16 @@ a {
   color: var(--maukhoi);
   margin-top: 38px;
   margin: 0 auto;
+}
+/* animate */
+/* 1. Mặc định thì ẩn đi */
+[data-aos] {
+  visibility: hidden;
+}
+
+/* 2. Khi AOS kích hoạt: Dù nó thêm class "aos-animate" hay "animate__animated" 
+      thì cũng đều cho hiện lên */
+[data-aos].aos-animate,
+[data-aos].animate__animated {
+  visibility: visible !important;
 }

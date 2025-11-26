@@ -14,6 +14,13 @@
     />
     <!-- main css -->
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- thư viện aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -84,7 +91,7 @@
             <!-- Main Right -->
             <div class="content-block">
               <!-- khối 1 -->
-              <h1 class="heading">
+              <h1 class="heading" data-aos="animate__bounceInUp">
                 Learn without limits and spread knowledge.
               </h1>
               <!-- Khối 2 -->
@@ -95,7 +102,7 @@
               </p>
               <!-- Khối 3-->
               <div class="cta-group">
-                <a href="" class="btn btn-seecourse">See Courses</a>
+                <a href="#!" class="btn btn-seecourse">See Courses</a>
                 <button class="wacth-video">
                   <div class="icon">
                     <img src="./img/Group 17513.svg" alt="" />
@@ -310,7 +317,13 @@
         </div>
         <!-- cta-sesion-right -->
         <div class="cta-session-right">
-          <img src="./img/Rectangle 11 (1).svg" alt="" class="avtar" />
+          <img
+            src="./img/Rectangle 11 (1).svg"
+            alt=""
+            class="avtar"
+            data-aos="flip-left"
+            data-aos-duration="2000ms"
+          />
         </div>
       </div>
     </div>
@@ -477,5 +490,23 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init({
+          // BẮT BUỘC: Dùng class của Animate.css làm trigger
+          useClassNames: true,
+
+          // Tắt class mặc định để tránh xung đột
+          initClassName: false,
+
+          // Thay class kích hoạt mặc định 'aos-animate' bằng 'animate__animated'
+          animatedClassName: "animate__animated",
+
+          // Chạy ngay cả khi phần tử đã ở trong vùng nhìn thấy từ đầu
+          offset: 0,
+        });
+      });
+    </script>
   </body>
 </html>
