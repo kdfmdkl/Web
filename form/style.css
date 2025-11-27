@@ -14,3 +14,68 @@ button img {
   height: 100px;
   width: 70px;
 }
+input:placeholder-shown {
+  background-color: aqua;
+
+  padding-left: 15px;
+}
+input:not(:placeholder-shown) {
+  background-color: lightgreen;
+  padding-left: 15px;
+}
+
+input {
+  font-size: 18px;
+  font-family: "Arial", sans-serif;
+  padding: 5px;
+  border-radius: 999px;
+  width: 150px;
+  margin: 0 auto;
+}
+label {
+  font-size: 20px;
+  font-family: "Arial", sans-serif;
+  margin-right: 10px;
+}
+form {
+  margin-top: 20px;
+  box-shadow: 20px 0 10px rgba(0, 0, 0, 0.1);
+  text-shadow: hoff voff blur #000;
+}
+form:focus-within {
+  background-color: lightyellow;
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 420px;
+  height: 44px; /* chiều cao ô */
+  padding: 10px 14px; /* giữ placeholder bên trong border */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 44px; /* căn giữa theo chiều dọc cho input 1 dòng */
+}
+
+/* textarea: dùng padding để căn dọc thay vì line-height */
+textarea {
+  line-height: 1.4;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* style placeholder */
+input::placeholder,
+textarea::placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+/* nếu muốn placeholder căn giữa ngang (áp dụng khi cần) */
+.input-center {
+  text-align: center;
+}

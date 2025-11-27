@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-card">
+        <h1 class="login-title">Sign In</h1>
+
+        <form id="loginForm" class="login-form">
+          <!-- Username -->
+          <div class="form-group">
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder=" "
+              required
+              autocomplete="off"
+            />
+            <label for="username" class="floating-label"
+              >Username or Email</label
+            >
+            <span class="error-message" id="usernameError"></span>
+          </div>
+
+          <!-- Password -->
+          <div class="form-group">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder=""
+              required
+              autocomplete="off"
+            />
+            <label for="password" class="floating-label">Password</label>
+            <span class="error-message" id="passwordError"></span>
+          </div>
+
+          <!-- Remember Me & Forgot Password -->
+          <div class="form-options">
+            <label class="checkbox-custom">
+              <input type="checkbox" id="rememberMe" name="rememberMe" />
+              <span class="checkmark"></span>
+              Remember me
+            </label>
+            <a href="#" class="forgot-password">Forgot Password?</a>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn-login">Sign In</button>
+
+          <!-- Sign Up Link -->
+          <p class="signup-text">
+            Don't have an account? <a href="#" class="signup-link">Sign Up</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
